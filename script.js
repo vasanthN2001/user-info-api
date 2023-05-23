@@ -7,13 +7,14 @@ const fetchUserDetails = () => {
         var userData = JSON.parse(xhttp.responseText);
         let name_first = userData.first_name;
         let name_last = userData.last_name;
-        let City = userData.city;
+        var City = userData.city;
         const email = userData.email;
         let gender = userData.gender;
         const number = userData.phone_number;
-        let country = userData.country;
+        var country = userData.country;
         let date_of_birth = userData.date_of_birth;
         let username = userData.username;
+        let id = userData.id;
 
     //About
         document.getElementById("userName-first").innerHTML = "First-Name  :"+name_first;
@@ -26,9 +27,7 @@ const fetchUserDetails = () => {
        document.getElementById("number").innerHTML ="Phone-Number  "+ number;
        document.getElementById("country").innerHTML ="Country  "+ country;
        document.getElementById("username").innerHTML = "Username  "+username;
-        /*document.getElementById("id").innerHTML = "Id"+id;
-        document.getElementById("date_of_birth").innerHTML = "Date_of_birth"+date_of_birth;
-        document.getElementById("employment").innerHTML = "Employment"+employment;*/
+       document.getElementById("id").innerHTML = "Id  "+id;
 
 
        
