@@ -1,33 +1,38 @@
 <!DOCTYPE html>
 
 <head>
+	<link rel="stylesheet" href="reset.css">
 	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="style1.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Abel&family=Noto+Sans+Tamil&family=Outfit:wght@300&display=swap" rel="stylesheet">
 	<script src="script.js"></script>
 </head>
 
-<body>
-	<div class="image">
+<body onload="fetchUserDetails()">
+
+	<div class="main">
 		<img id="userImage" src="" />
+		<div class="about">
+			<h1 id="name"></h1>
+			<h2 id="userName"></h2>
+			<h3 id="dateOfBirth"></h3>
+			<h3 id="email"></h3>
+			<h3 id="id"></h3>
+		</div>
 	</div>
 
 	<div class="container">
-		<div class="about">
-			<p id="firstName"></p>
-			<p id="lastName"></p>
-			<p id="email"></p>
-		</div>
 		<div class="details">
 			<p id="city"></p>
-			<p id="gender"></p>
 			<p id="number"></p>
 			<p id="country"></p>
 			<p id="dateOfBirth"></p>
-			<p id="userName"></p>
-			<p id="id"></p>
 		</div>
 	</div>
 	<center>
-		<button id="btn" onclick="fetchUserDetails()">Fetch API</button>
+		<button id="fetchBtn" onclick="fetchUserDetails()">Fetch API</button>
 	</center>
 </body>
 

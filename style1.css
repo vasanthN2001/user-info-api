@@ -1,0 +1,55 @@
+body {
+	font-family: 'Abel', sans-serif;
+	font-family: 'Noto Sans Tamil', sans-serif;
+	font-family: 'Outfit', sans-serif;
+}
+
+label {
+    font-weight: bold;
+}
+
+.main {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.about {
+	background-color: #f1f1f1;
+	padding: 20px;
+	border: none;
+	border-radius: 20px;
+    display: flex; 
+    flex-direction: column;
+    gap: 16px; 
+}
+
+.container {
+	border-radius: 5px;
+	outline: none;
+}
+
+.details {
+	background-color: #f1f1f1;
+	outline: none;
+	border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+	padding: 20px;
+    margin: 25px;
+}
+
+button {
+    background-color: #00796B;
+    color: #fff;
+    border: none;
+    padding: 5px 15px;
+    margin: 10px;
+    height: 45px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #004D40;
+}
