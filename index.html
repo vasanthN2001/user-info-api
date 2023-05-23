@@ -1,44 +1,34 @@
 <!DOCTYPE html>
-<header>
 
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-
-</header>
+<head>
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js"></script>
+</head>
 
 <body>
+	<div class="image">
+		<img id="userImage" src="" />
+	</div>
 
-
-    <div class="image">
-
-        <img id="userImage" src="https://avatars.githubusercontent.com/u/83718463?v=4" />
-    </div>
-
-    <div class="container">
-        <div class="about">
-            <p id="userName-first"></p>
-            <p id="userName-last"></p>
-            <p id="email"></p>
-
-        </div>
-
-        <div class="details">
-            <p id="city"></p>
-            <p id="gender"></p>
-            <p id="number"></p>
-            <p id="country"></p>
-            <p id="date_of_birth"></p>
-            <p id="username"></p>
-            <p id="id"></p>
-
-           
-        </div>
-
-    </div>
-
-<center>
-    <button id="btn" onclick="fetchUserDetails()">Fetch API</button>
-</center>
+	<div class="container">
+		<div class="about">
+			<p id="firstName"></p>
+			<p id="lastName"></p>
+			<p id="email"></p>
+		</div>
+		<div class="details">
+			<p id="city"></p>
+			<p id="gender"></p>
+			<p id="number"></p>
+			<p id="country"></p>
+			<p id="dateOfBirth"></p>
+			<p id="userName"></p>
+			<p id="id"></p>
+		</div>
+	</div>
+	<center>
+		<button id="btn" onclick="fetchUserDetails()">Fetch API</button>
+	</center>
 </body>
 
 </html>
