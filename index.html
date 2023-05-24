@@ -1,44 +1,39 @@
 <!DOCTYPE html>
-<header>
 
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+<head>
+	<link rel="stylesheet" href="reset.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="style1.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Abel&family=Noto+Sans+Tamil&family=Outfit:wght@300&display=swap" rel="stylesheet">
+	<script src="script.js"></script>
+</head>
 
-</header>
+<body onload="fetchUserDetails()">
 
-<body>
+	<div class="main">
+		<img id="userImage" src="" />
+		<div class="about">
+			<h1 id="name"></h1>
+			<h2 id="userName"></h2>
+			<h3 id="dateOfBirth"></h3>
+			<h3 id="email"></h3>
+			<h3 id="id"></h3>
+		</div>
+	</div>
 
-
-    <div class="image">
-
-        <img id="userImage" src="https://avatars.githubusercontent.com/u/83718463?v=4" />
-    </div>
-
-    <div class="container">
-        <div class="about">
-            <p id="userName-first"></p>
-            <p id="userName-last"></p>
-            <p id="email"></p>
-
-        </div>
-
-        <div class="details">
-            <p id="city"></p>
-            <p id="gender"></p>
-            <p id="number"></p>
-            <p id="country"></p>
-            <p id="date_of_birth"></p>
-            <p id="username"></p>
-            <p id="id"></p>
-
-           
-        </div>
-
-    </div>
-
-<center>
-    <button id="btn" onclick="fetchUserDetails()">Fetch API</button>
-</center>
+	<div class="container">
+		<div class="details">
+			<p id="city"></p>
+			<p id="number"></p>
+			<p id="country"></p>
+			<p id="dateOfBirth"></p>
+		</div>
+	</div>
+	<center>
+		<button id="fetchBtn" onclick="fetchUserDetails()">Fetch API</button>
+	</center>
 </body>
 
 </html>

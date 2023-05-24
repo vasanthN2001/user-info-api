@@ -1,50 +1,16 @@
-body{
-    background: rgb(59,104,217);
-background: linear-gradient(90deg, rgba(59,104,217,0) 0%, rgba(126,86,212,1) 30%, rgba(212,85,85,1) 77%);
+body {
+	background: rgb(59, 104, 217);
+	background: linear-gradient(90deg, rgba(59, 104, 217, 0) 0%, rgba(126, 86, 212, 1) 30%, rgba(212, 85, 85, 1) 77%);
 }
+
 #userImage {
-
-    border-radius: 190px;
-    border: 5px solid black;
-    width: 280px;
-    box-shadow: 40px 0px 40px -40px #333;
-    border: none;
+	border-radius: 190px;
+	border: 5px solid black;
+	width: 280px;
+	box-shadow: 40px 0px 40px -40px #333;
+	border: none;
 }
 
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    border-radius: 5px;
-    background-color: #6A1B9A;
-    outline: none;
-}
-
-.about {
-    font-family: Poppins-Regular;
-    background-color: #f1f1f1;
-    padding: 20px;
-    border: 5px solid black;
-    position: absolute;
-    top: 0;
-    left: 320px;
-    margin-top: 60px;
-    width: 450px;
-    border: none;
-    border-radius:20px;
-}
-
-.details {
-    font-family: Poppins-Regular;
-    background-color: white;
-    padding: 20px;
-    width:770px;
-    outline: none;
-    margin: 10px;
-    border-radius: 20px;
-
-
-}
-
-#btn{
-    margin: 20px;
+#btn {
+	margin: 20px;
 }
